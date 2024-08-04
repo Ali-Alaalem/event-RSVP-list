@@ -13,7 +13,7 @@ const App = () => {
       <h1>event attendees List</h1>
       <ul>
         {items.map((item, index) => (
-          <li key={index} className={item.visited ? 'RSVP' : 'not-RSVP'}>
+          <li key={index} className={item.RSVP ? 'RSVP' : 'not-RSVP'}>
             {item.name}
           </li>
         ))}
